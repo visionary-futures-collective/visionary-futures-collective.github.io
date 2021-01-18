@@ -91,3 +91,8 @@ In order to compile the assets and run `Jekyll` locally you need to follow those
 # Credits
 
 - [Nathan Randecker](https://github.com/nrandecker)
+
+# VFC Notes
+
+- To edit responsive grids: custom css (https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp)
+- To edit hover for responsive grids: head.html (https://www.w3schools.com/howto/howto_css_image_overlay.asp)

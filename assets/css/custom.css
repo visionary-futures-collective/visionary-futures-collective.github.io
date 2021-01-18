@@ -5,3 +5,65 @@ div.user-details {
 div.user-details h1{
   text-align: center;
 }
+
+/*HAA: Adding responsive image grid*/
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+
+    /* Create four equal columns that sits next to each other */
+    .column {
+      flex: 25%;
+      max-width: 33%;
+      padding: 0 4px;
+    }
+
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+      .column {
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+/*HAA end responsive image grid */
+
+  /*HAA: Adding image grid: test 1*/
+  /* Three image containers (use 25% for four, and 50% for two, etc) */
+/*  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+
+  /* Clear floats after image containers */
+/*  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    padding-bottom: 5px;
+  }
+
+  /*HAA: fun with tables*/
+/*  table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid maroon;
+  /*  border-color: #7B241C;*/
+/*  }

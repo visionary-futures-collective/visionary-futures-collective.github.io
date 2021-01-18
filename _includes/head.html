@@ -9,4 +9,48 @@
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl }}">
   <link rel="shortcut icon" type="image/png" href="{{ '/assets/favicon.png' }}">
     <link rel="stylesheet" href="{{ '/assets/css/custom.css' | prepend: site.baseurl }}">
+<!-- HAA: adding container float -->
+  <style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  padding-bottom: 5px;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  width: 80%; /*Size of text box relative to image*/
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.15;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+/*  background-color: #FFFFFF;*/ /*Putting a box behind the text*/
+  color: black;
+  font-size: 16px;
+/*  padding: 16px 32px;*/
+}
+</style>
 </head>
