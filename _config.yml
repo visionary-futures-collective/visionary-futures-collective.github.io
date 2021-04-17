@@ -1,8 +1,7 @@
 # Site settings
 title: Visionary Futures Collective
 description: Jekyll Theme Minimal Resume
-baseurl: "/visionary-futures-collective.github.io" # the subpath of your site, e.g. /blog
-url: "localhost:4000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+baseurl: "" # the subpath of your site, e.g. /blog
 
 # User settings
 username: Visionary Futures Collective
